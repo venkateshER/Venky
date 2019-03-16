@@ -62,7 +62,7 @@ public class DeckOfCards {
 		deck.getCards();
 		deck.shuffleCard();
 
-		String playerCards[][] = deck.distribute(4, 13);
+		String playerCards[][] = deck.distribute(4, 9);
 
 		deck.displayCards(playerCards);
 

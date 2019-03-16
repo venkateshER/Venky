@@ -60,7 +60,7 @@ public class StockAccount {
 			
 			mapper.writeValue(new File("/home/admin1/eclipse-workspace/jsonfiles/persons.json"),stocks);
 			i++;
-			StockReport st = new StockReport();
+			StockReport1 st = new StockReport1();
 			st.setStocks(stocks);
 
 			for (Stocks s1 : st.getStocks()) {
@@ -109,7 +109,7 @@ public class StockAccount {
 			System.out.println(""+e.getMessage());
 			e.printStackTrace();
 		}
-		StockReport st = new StockReport();
+		StockReport1 st = new StockReport1();
 		st.setStocks(stocks);
 		Stocks s=new Stocks();
 //		String name=s.getName();

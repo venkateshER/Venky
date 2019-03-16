@@ -12,7 +12,7 @@ public class PlayerQueue extends DeckOfCards {
 		deck.getCards();
 		deck.shuffleCard();
 
-		String playerCards[][] = deck.distribute(4, 13);
+		String playerCards[][] = deck.distribute(4, 9);
 		
 		int i = 1;
 		for (String[] playerCard : playerCards) {

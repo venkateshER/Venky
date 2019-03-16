@@ -5,7 +5,7 @@ import com.bridgeit.utility.LinkedList;
 public class UserStocks
 {
 	private String userName;
-	private LinkedList<ShareList> shareList;
+	private java.util.LinkedList<ShareList> shareList;
 	
 	public String getUserName() {
 		return userName;
@@ -13,10 +13,10 @@ public class UserStocks
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
-	public LinkedList<ShareList> getShareList() {
+	public java.util.LinkedList<ShareList> getShareList() {
 		return shareList;
 	}
-	public void setShareList(LinkedList<ShareList> shareList) {
-		this.shareList = shareList;
+	public void setShareList(java.util.LinkedList<ShareList> shareList2) {
+		this.shareList = shareList2;
 }
 }
