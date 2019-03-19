@@ -1,0 +1,33 @@
+[ {
+  "name" : "VENKATESH",
+  "id" : 1,
+  "specialization" : "NUEROLOGIST",
+  "avl" : "6AM"
+}, {
+  "name" : "RAM",
+  "id" : 2,
+  "specialization" : "ORTHOLOGIST",
+  "avl" : "9AM"
+}, {
+  "name" : "KRISH",
+  "id" : 3,
+  "specialization" : "pyschologist",
+  "avl" : "11AM"
+}, {
+  "name" : "SHAM",
+  "id" : 4,
+  "specialization" : "CHILD SPECIALIST",
+  "avl" : "6PM"
+
+},{
+  "name" : "PRABHU",
+  "id" : 5,
+  "specialization" : "CARDIOLOGIST",
+  "avl" : "8PM"
+}, 
+{
+  "name" : "RAJU",
+  "id" : 6,
+  "specialization" : "PHYSICIAN",
+  "avl" : "10AM"
+}]
