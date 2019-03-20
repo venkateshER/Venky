@@ -2,13 +2,18 @@ package com.bridgeit.oops;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
+//import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
+/**
+ * 
+ * @author Venkatesha E R
+ * date:12/03/19
+ *
+ */
 public class DataManagement 
 
 {
@@ -23,8 +28,8 @@ public class DataManagement
 	ObjectMapper mapper=new ObjectMapper();
 	try {
 		JsonNode rootNode=mapper.readTree(file);
-		JsonNode inventory=rootNode.get("Rice");
-		System.out.println("=====RICE=====");
+		JsonNode inventory=rootNode.get("Rice");				//reading Rice elements
+		System.out.println("=====RICE=====");				
 		for(JsonNode node:inventory)
 		{
 			//System.out.println(""+node);
@@ -37,7 +42,7 @@ public class DataManagement
 		}
 		JsonNode inventory1=rootNode.get("Pulses");
 		
-		System.out.println("====PULSES====");
+		System.out.println("====PULSES====");					//reading Pulses elements
 		for(JsonNode node:inventory1)
 		{
 			//System.out.println(""+node);
@@ -50,7 +55,8 @@ public class DataManagement
 		}
 		
 		JsonNode inventory2=rootNode.get("Wheat");
-		System.out.println("====WHEAT====");
+		System.out.println("====WHEAT====");					//reading Wheat elements
+	
 		for(JsonNode node:inventory2)
 		{
 			//System.out.println(""+node);

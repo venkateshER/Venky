@@ -1,14 +1,19 @@
 package com.bridgeit.oops;
 
 import java.util.Random;
-
+/**
+ * 
+ * @author Venkatesha E R
+ * date:12/03/19
+ *
+ */
 public class DeckOfCards {
 
 	private String[] suits = { "Hearts", "Clubs", "Diamonds", "Spades" };
 	private String[] ranks = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace" };
 	private static String[] cards = new String[52];
 
-	public String[] getCards() {
+	public String[] getCards() {						//getting the card
 		int i = 0;
 		for (String suit : suits) {
 			for (String card : ranks) {
@@ -19,7 +24,7 @@ public class DeckOfCards {
 		return cards;
 	}
 
-	public void shuffleCard() {
+	public void shuffleCard() {								//shuffle Cards
 		Random random = new Random();
 		for (int i = 0; i < cards.length; i++) {
 			int index = random.nextInt(52);
@@ -29,7 +34,7 @@ public class DeckOfCards {
 		}
 	}
 
-	public String[][] distribute(int numOfPlayers, int numberOfCards) {
+	public String[][] distribute(int numOfPlayers, int numberOfCards) {		//cards are distribute
 		String playerCards[][] = new String[numOfPlayers][numberOfCards];
 		int k = 0;
 		for (int i = 0; i < numOfPlayers; i++) {
@@ -42,7 +47,7 @@ public class DeckOfCards {
 		return playerCards;
 	}
 
-	public void displayCards(String[][] playerCards) {
+	public void displayCards(String[][] playerCards) {					//display cards
 		int i = 1;
 		for (String[] playerCard : playerCards) {
 			System.out.println();

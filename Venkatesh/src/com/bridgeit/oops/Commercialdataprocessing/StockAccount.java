@@ -11,7 +11,12 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import practice.setter;
-
+/**
+ * 
+ * @author Venkatesha E R
+ * Date:15/03/19
+ *
+ */
 public class StockAccount implements StockInterface {
 	Stack stack = new Stack(100);
 	LinkedList ls = new LinkedList();
@@ -36,6 +41,7 @@ public class StockAccount implements StockInterface {
 	}
 
 	@Override
+	
 	public double valueOf() {
 		Scanner sc = new Scanner(System.in);
 		try {
@@ -101,6 +107,7 @@ public class StockAccount implements StockInterface {
 			
 	}
 	@Override
+	
 	public void buy(int amount, String symbol) {
 		Scanner sc = new Scanner(System.in);
 		try {

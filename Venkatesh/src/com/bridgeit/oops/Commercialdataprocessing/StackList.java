@@ -147,6 +147,7 @@ static Node head;
 		{
 			
 			System.out.println(temp.data);
+			//System.out.println("----------------------------------------------");
 			temp=temp.next;	
 			
 		}

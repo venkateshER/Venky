@@ -7,7 +7,12 @@ import java.util.Scanner;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
+/**
+ * 
+ * @author Venkatesha E R
+ * Date:16/03/19
+ *
+ */
 public class CliniqueManager 
 {
 	public static ObjectMapper objM = new ObjectMapper();

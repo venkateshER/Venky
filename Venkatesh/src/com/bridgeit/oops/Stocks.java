@@ -1,5 +1,10 @@
 package com.bridgeit.oops;
-
+/**
+ * 
+ * @author Venkatesha E R
+ * Date:14/03/19
+ *
+ */
 public class Stocks {
 	
 	private String name;

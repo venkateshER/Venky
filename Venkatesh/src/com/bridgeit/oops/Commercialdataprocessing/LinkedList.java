@@ -142,20 +142,23 @@ static Node head;
 	{
 		Node temp=head;
 		
-		//System.out.println("linkedlist:");
+	//	System.out.println("linkedlist:");
+	
 		while(temp!=null)
 		{
 			
 			System.out.println(temp.data);
+			
 			temp=temp.next;	
 			
 		}
+		//System.out.println("----------------------------------------------------");
 		return null;
 		
 	}
 	public void displayList()
 	{
-		Node temp;
+			Node temp;
 			temp =head;
 			while(temp!= null)
 			{

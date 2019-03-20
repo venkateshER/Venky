@@ -2,8 +2,6 @@ package com.bridgeit.oops.AddressBook;
 
 import java.util.Scanner;
 
-//import utility.UtilityMethods;
-
 public class AddressBookController
 {
 	static AddressBook addressBook = new AddressBook();
@@ -211,5 +209,5 @@ public class AddressBookController
 		{
 			System.out.println("\nNo Address Book linked! Create one or open existing..\n");
 		}	
-	}
+	} 
 }

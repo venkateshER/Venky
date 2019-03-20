@@ -3,8 +3,13 @@ package com.bridgeit.oops;
 import java.util.Random;
 
 import com.bridgeit.utility.Queue;
-
-public class PlayerQueue extends DeckOfCards {
+/**
+ * 
+ * @author Venkatesha E R
+ * date:13/03/19
+ *
+ */
+public class PlayerQueue extends DeckOfCards { 			//extending the DeckOfCards class
 
 	public static void main(String args[]) {
 		DeckOfCards deck = new PlayerQueue();
@@ -22,7 +27,7 @@ public class PlayerQueue extends DeckOfCards {
 			for (String card : playerCard) {
 
 				Queue q = new Queue(playerCard.length);
-				q.enqueue(card);
+				q.enqueue(card);							//store it into the queue
 			}
 			System.out.println();
 

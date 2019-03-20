@@ -9,7 +9,12 @@ import java.util.regex.Pattern;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
+/**
+ * 
+ * @author Venkatesha E R
+ * date:13/03/19
+ *
+ */
 public class RegularExpression {
 
 	public static void main(String[] args) {
@@ -32,17 +37,17 @@ public class RegularExpression {
 			String name=sc.nextLine();
 			
 		
-			if(Pattern.matches("[a-zA-Z]+", name))	
+			if(Pattern.matches("[a-zA-Z]+", name))					//replacing the name
 			{
-				str=str.replaceAll("<<name>>", name);
+				str=str.replaceAll("<<name>>", name);				
 			}
 
 			System.out.println("Enter the fullname");
 			Scanner sc2=new Scanner(System.in);
 			String fullname=sc1.nextLine();
-			if(Pattern.matches("[a-zA-Z]+",fullname ))	
+			if(Pattern.matches("[a-zA-Z]+",fullname ))				
 			{
-				str=str.replaceAll("<<full name>>", fullname);
+				str=str.replaceAll("<<full name>>", fullname);			//replacing the fullname
 			}
 
 			System.out.println("Enter the phone number ");
@@ -51,9 +56,9 @@ public class RegularExpression {
 			{
 				str=str.replaceAll("x{10}",number);
 	}
-			
-			Date currentDate = new Date();
-	        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+				
+			Date currentDate = new Date();								//reading current date 
+	        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");	
 	        String date = sdf.format(currentDate);
 	        str=str.replaceAll("dd/mm/yyyy", date);
 			

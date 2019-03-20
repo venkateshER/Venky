@@ -8,7 +8,12 @@ import java.util.Scanner;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.JsonNodeCreator;
-
+/**
+ * 
+ * @author Venkatesha E R
+ * date:13/03/19
+ *
+ */
 public class InventoryManagement {
 
 	public static void main(String[] args) {
@@ -45,7 +50,7 @@ public class InventoryManagement {
 
 			}
 
-			JsonNode inventory = rootNode.path(inventoryproduct);
+			JsonNode inventory = rootNode.path(inventoryproduct);	//reading the entered choice
 			// System.out.println(""+inventory);
 			for (JsonNode node : inventory) {
 				// System.out.println(""+node);
