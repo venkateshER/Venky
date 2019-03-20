@@ -1,18 +1,18 @@
 [ {
   "name" : "VENKAT",
-  "relianceShares" : 26,
-  "hdfcShares" : 70,
+  "relianceShares" : 57,
+  "hdfcShares" : 68,
   "iciciShares" : 30
 }, {
   "name" : "RAM",
-  "relianceShares" : 40,
-  "hdfcShares" : 56,
-  "iciciShares" : 23
+  "relianceShares" : 70,
+  "hdfcShares" : 41,
+  "iciciShares" : 28
 }, {
   "name" : "KRISH",
   "relianceShares" : 35,
-  "hdfcShares" : 32,
-  "iciciShares" : 31
+  "hdfcShares" : 37,
+  "iciciShares" : 36
 }, {
   "name" : "SHAM",
   "relianceShares" : 15,
@@ -21,6 +21,6 @@
 }, {
   "name" : "RAJU",
   "relianceShares" : 10,
-  "hdfcShares" : 20,
-  "iciciShares" : 35
+  "hdfcShares" : 15,
+  "iciciShares" : 40
 } ]
