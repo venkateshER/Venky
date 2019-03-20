@@ -1,0 +1,17 @@
+[ {
+  "firstName" : "ABHI",
+  "lastName" : "SHEK",
+  "address" : "MYSORE",
+  "city" : "MYSORE",
+  "state" : "KARNATAKA",
+  "zip" : "546554",
+  "phone" : "9896949515"
+}, {
+  "firstName" : "VENKATESH",
+  "lastName" : "ER",
+  "address" : "MANGLORE",
+  "city" : "MANGLORE",
+  "state" : "KARNATAKA",
+  "zip" : "5641125",
+  "phone" : "9461616651"
+} ]
