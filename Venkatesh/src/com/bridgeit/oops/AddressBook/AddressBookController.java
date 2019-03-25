@@ -182,7 +182,7 @@ public class AddressBookController
 	{
 		if(addressBook.getFile() != null)
 		{
-			addressBook.fileSystem.saveFile(addressBook.getFile());
+			AddressInterface.saveFile(addressBook.getFile());
 			System.out.println("\nAddressBook Saved Successfully!\n");
 		}
 		else
@@ -201,7 +201,7 @@ public class AddressBookController
 			String fileExt = sc.nextLine();
 			if(fileExt.equals(".json") || fileExt.equals(".txt"))
 			{
-				addressBook.fileSystem.saveFile(FileSystem.createNewFile(fileName, fileExt));
+				AddressInterface.saveFile(FileSystem.createNewFile(fileName, fileExt));
 				System.out.println("\nAddressBook Saved to another file successfully!\n");
 			}
 		}

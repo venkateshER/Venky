@@ -2,7 +2,7 @@ package com.bridgeit.oops.CliniqueManagement;
 
 import java.util.List;
 
-public class Search
+public class Search 
 {
 	public boolean searchDocByName(String searchName, List<Doctor> doctorList)
 	{

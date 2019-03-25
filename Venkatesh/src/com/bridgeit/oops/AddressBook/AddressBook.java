@@ -7,7 +7,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 
-public class AddressBook 
+public class AddressBook implements AddressInterface
 {
 	Scanner sc=new Scanner(System.in);
 	Scanner sc1=new Scanner(System.in);
@@ -46,8 +46,8 @@ public class AddressBook
 		String fileExt = sc.nextLine();
 		if(fileExt.equals(".json") || fileExt.equals(".txt"))
 		{
-			File openFile = FileSystem.getPathOfFile(fileName.trim(), fileExt);
-			fileSystem.readFile(openFile);
+			File openFile = AddressInterface.getPathOfFile(fileName.trim(), fileExt);
+			AddressInterface.readFile(openFile);
 				setFile(openFile);
 				setFileName(fileName + fileExt);
 		}
@@ -194,5 +194,6 @@ class ZIPComparator implements Comparator<Person>
 			return 1;
 		}
 		return 0;
+		
 	}
 }

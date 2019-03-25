@@ -13,15 +13,13 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  * Date:16/03/19
  *
  */
-public class CliniqueManager 
+public class CliniqueManager implements CliniqueInterface
 {
 	public static ObjectMapper objM = new ObjectMapper();
 	
 	public static void main(String[] args)
 	{
-		String doctorFile = "/home/admin1/eclipse-workspace/jsonfiles/Doctor.json";
-		String patientFile = "/home/admin1/eclipse-workspace/jsonfiles/Patient.json";
-		String appointmentFile = "/home/admin1/eclipse-workspace/jsonfiles/Appointments.json";
+
 		Scanner sc=new Scanner(System.in);
 		
 		Doctor doctor = new Doctor();

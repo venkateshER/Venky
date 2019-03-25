@@ -10,7 +10,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 
 
-public class CliniqueUtility 
+public class CliniqueUtility implements CliniqueInterface 
 {
 	public static ObjectMapper objM = new ObjectMapper();
 	static Scanner sc=new Scanner(System.in);
@@ -19,7 +19,6 @@ public class CliniqueUtility
 	public static void addDoctor(List<Doctor> doctorList)
 	{
 		
-		String doctorFile = "/home/admin1/eclipse-workspace/jsonfiles/Doctor.json";
 		System.out.println("Enter the Doctor's name");
 		String name =sc.nextLine().toUpperCase(); 
 		System.out.println("Enter the DOctor's id:");
@@ -50,7 +49,7 @@ public class CliniqueUtility
 	
 	public static void addPatient(List<Patient> patientList)
 	{
-		String patientFile = "/home/admin1/eclipse-workspace/jsonfiles/Patient.json";
+		
 		System.out.println("Enter the patient's name:");
 		String name = sc.nextLine().toUpperCase();
 		System.out.println("Enter the Patient's id:");
